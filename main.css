@@ -1,8 +1,11 @@
-
+*{
+  padding: 0;
+  margin: 0;
+}
 button {
   background-color: #4CAF50;
   border: none;
-  width: 620px;
+  width: 50%;
   float: left;
   height: 3em;
   color: white;
@@ -14,16 +17,32 @@ button {
   text-transform: capitalize;
   margin: 1px;
 }
+.btnW{
+  display: flex;
+}
 /*# sourceMappingURL=main.css.map */
 body{
   background-color: black;
 }
 .main{
-  background-color: wheat;
-  display: grid;
+  /*display: grid;
   grid-template-columns: 0.98fr 1fr;
-  grid-gap: 0px;
+  grid-gap: 0px; */
+  background-color: wheat;
+  display: flex;
+  /* color: wheat; */
+
 }
+.header{
+  flex: 1;
+  padding-left: 20px
+}
+
 .weapons{
   background-color: #e0be60;
+  flex: 1;
+  padding-left: 20px;
+}
+.map{
+  width: 100%;
 }
