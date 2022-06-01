@@ -1,0 +1,65 @@
+button {
+  background-color: #4CAF50;
+  border: none;
+  width: 250px;
+  float: left;
+  height: 3em;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s cubic-bezier(0, 0, 1, 0);
+  transition: all 0.4s cubic-bezier(0, 0, 1, 0);
+  text-transform: capitalize;
+  margin: 1px;
+}
+html{
+  background-color: #181818;
+  color: white;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+}
+/*# sourceMappingURL=main.css.map */
+.flexx{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 450px;
+  font-size: 21px;
+}
+.flexButtons{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.info{
+  /* top: 0; */
+  display: flex;
+  /* gap: 50px; */
+}
+.towerTypes{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 15px;
+  padding: 10px;
+  /* flex-direction: column; */
+}
+.coloumn1{
+  flex: 1;
+}
+.coloum2{
+  flex: 2;
+}
+.special{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.text{
+  text-align: center;
+  padding: 10x;
+}
+.place{
+  width: 74%;
+}

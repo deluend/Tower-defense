@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS course</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body> 
+    <div class="container">
+
+        <h1>Tower Defense Game</h1>
+        <div class="flexx">
+
+<div class="flexButtons">
+    <button onclick="nextWave();" id=nextWaveBtn>Next wave</button>
+    <button onclick="specialAttack();" id=specialAttackBtn>Special attack</button>
+    <div>
+        
+        <div class="info" id=info></div>
+        <!-- <br><br><br> -->
+        <label for=showrange>Show range</label>
+    <input type=checkbox id="showrange">
+    <br>
+    <div class="towerTypes">
+      <!-- <div class="coloumn2">   -->
+        <label for=normal>&#x1F52B; Normal 20$
+        <input type=radio name=tower checked id=normal>
+    </label>
+
+    <label for=poison>&#x2620; Poison 35$
+    <input type=radio name=tower id=poison>
+    </label>
+
+    <label for=flamethrower>&#x1F525; Flamethrower 40$
+        <input type=radio name=tower id=flamethrower>
+    </label>
+    <!-- </div> -->
+<!-- <div class="coloumn2">/ -->
+
+    <label for=minigun>Minigun 30$
+        <input type=radio name=tower id=minigun>
+    </label>
+
+    <label for=sniper>&#x25CE; Sniper 75$
+        <input type=radio name=tower id=sniper>
+    </label>
+    <label for=shotgun>Shotgun 100$
+        <input type=radio name=tower id=shotgun>
+    </label>
+<!-- </div> -->
+<label for=select>&#x270B; Hand
+    <input type=radio name=tower id=select>
+</label>
+</div>
+    <div class="special">
+    <code class="text">Special attack: </code>
+    <label for=wall>Bullet wall
+    <input type=radio name=attack id=wall checked></label>
+    <label for=spiral>Spiral
+        <input type=radio name=attack id=spiral></label>
+        <label for=sniperSkill>Sniper skill
+            <input type=radio name=attack id=sniperSkill></label>
+        </div>
+    </div>
+</div>
+<canvas class="place" id="canvas" width="1250" height="400" onclick="placeTower();"></canvas>
+<div id=dialog>
+    <div id=dialog-msg></div>
+</div>
+</div>
+
+<script src='main.js'></script>
+</div>
+</body>
+
+</html>
