@@ -30,7 +30,7 @@ var cooldown = 1000;
 
 var FPS = 60;
 var lives = 20;
-var money = 50;
+var money = 500;
 
 var nextWaveIn = 100;
 var waveCount = 0;
@@ -464,7 +464,7 @@ function newParticle(x, y, life, color){
 var ctx = document.getElementById("canvas").getContext("2d");
 
 function engine() {
-  $('#info').html("Gold: "+(Math.floor(money*10)/10)+"<br>Lives: "+(Math.floor(lives))+"<br>Wave: "+waveCount);
+  $('#info').html("Gold: "+(Math.floor(money*10/10))+"<br>Lives: "+(Math.floor(lives))+"<br>Wave: "+waveCount);
   ctx.fillStyle = "green";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   
@@ -493,7 +493,7 @@ function engine() {
   if (!enemiesAreAlive) $('#nextWaveBtn').css("background-color",enabledColor);
   
   if (lives <= 0){
-    
+    alert("Game Over")
   }
 
   for (var key in enemies) {

@@ -20,9 +20,18 @@ button {
 .btnW{
   display: flex;
 }
+h1{
+  color: white;
+  text-align: center;
+  font-size: 45px;
+}
+h2{
+  padding-bottom: 10px;
+}
 /*# sourceMappingURL=main.css.map */
 body{
   background-color: black;
+  font-size: 20px
 }
 .main{
   /*display: grid;
