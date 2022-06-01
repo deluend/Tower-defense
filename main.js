@@ -464,7 +464,7 @@ function newParticle(x, y, life, color){
 var ctx = document.getElementById("canvas").getContext("2d");
 
 function engine() {
-  $('#info').html("Gold: "+(Math.floor(money*10)/10)+" <_> "+ "Lives: "+(Math.floor(lives))+"<br>Wave: "+waveCount);
+  $('#info').html("Gold: "+(Math.floor(money*10)/10)+"<br>Lives: "+(Math.floor(lives))+"<br>Wave: "+waveCount);
   ctx.fillStyle = "green";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   
